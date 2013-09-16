@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title></title>
+</head>
+<body>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th th:text="#{field1}">AAA</th>
+        <th th:text="#{field2}">AAA</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each = "tf : ${testDataList}">
+        <td th:text="${tf.text}">AAA</td>
+        <td th:text="${tf.delta}">AAA</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
